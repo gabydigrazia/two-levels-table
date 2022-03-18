@@ -1,0 +1,10 @@
+  <table class="main-table">
+    <tr>
+      <app-header [colsNumber]="columns"></app-header>
+    </tr>
+    <tr>
+      <app-second-level-table [colsNumber]="columns"></app-second-level-table>
+    </tr>
+
+    <button mat-flat-button (click)="addNewColumn()">Add Column</button>
+  </table>

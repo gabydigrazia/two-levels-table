@@ -1,0 +1,29 @@
+  
+<div class="header-main-container">
+  <div class="header-title-container">
+    <h2>Digital Value to Society</h2>
+  </div>
+
+  <div class="header-container">
+    <ng-container *ngIf="isOdd; then oddColumnsNumber; else evenColumnsNumber"></ng-container>
+
+    <ng-template #oddColumnsNumber>
+      <div class="header-content" *ngFor="let col of colsArr; let i = index">
+        <div [ngClass]="{'middle-odd-column': i === middleColNumber, 'left-columns': i < middleColNumber, 'right-columns': i > middleColNumber}"></div>
+      </div>
+    </ng-template>
+
+    <ng-template #evenColumnsNumber>
+      <div class="header-content" *ngFor="let col of colsArr; let i = index">
+        <div [ngClass]="{'middle-left-even-column': i === middleColNumber, 'middle-right-even-column': i === middleColNumber+1, 'left-columns': i < middleColNumber, 'right-columns': i > middleColNumber+1}"></div>
+      </div>
+    </ng-template>
+  </div>
+
+  <div class="header-container col-header-base">
+    <div class="header-content" *ngFor="let col of colsArr; let i = index">
+      <div class="column-base"></div>
+    </div>
+  </div>
+</div>
+

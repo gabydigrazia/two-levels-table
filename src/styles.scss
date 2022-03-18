@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+$header-ligth-blue: #377bd0;
+$header-dark-blue: #325e99;
+$bg-dark-blue: #123057;
+$table-bg-dark-blue: #143561;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	display: flex;
+	height: 100%;
+	background-color: $bg-dark-blue;
+}
+body {
+	margin: 0;
+	padding-left: 30px;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+}

@@ -1,0 +1,15 @@
+@import 'src/styles';
+
+.main-table {
+	padding: 50px 10px 20px;
+	background-color: $bg-dark-blue;
+	width: 98%;
+}
+button {
+	margin-top: 20px;
+	background-color: $header-ligth-blue;
+	color: white;
+	float: right;
+	font-size: 18px;
+	height: 42px;
+}
